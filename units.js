@@ -55,4 +55,32 @@ const unitScalars = [
 		"anchor": "newton-meters",
 		"scalar": 1.3558
 	},
+	{
+		"name": "meters",
+		"abr": "m",
+		"type": "distance",
+		"anchor": "meters",
+		"scalar": 1
+	},
+	{
+		"name": "millimeters",
+		"abr": "mm",
+		"type": "distance",
+		"anchor": "meters",
+		"scalar": 1/1000
+	},
+	{
+		"name": "inches",
+		"abr": "in",
+		"type": "distance",
+		"anchor": "meters",
+		"scalar": 0.0254
+	},
+	{
+		"name": "mil",
+		"abr": "mil",
+		"type": "distance",
+		"anchor": "meters",
+		"scalar": 0.0000254
+	}
 ];
