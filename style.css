@@ -19,6 +19,10 @@ input {
 	border-radius: 10px;
 }
 
+input:invalid {
+    box-shadow: none;
+}
+
 input[type=number] { 
   	-webkit-appearance: none; 
   	margin: 5px 2px 5px 2px;
@@ -97,6 +101,7 @@ a {
 }
 
 .infoText {
+	min-height: 4rem;
 	color: rgb(255,123,0);
 	text-shadow:
 		-1px -1px 0 #000,
@@ -112,4 +117,9 @@ a {
 
 .newConv {
   background: orange;
+}
+
+.listContainer {
+	position: absolute;
+	width: 30vw;
 }
