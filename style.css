@@ -114,3 +114,8 @@ a {
 .newConv {
   background: orange;
 }
+
+.listContainer {
+	position: absolute;
+	width: 30vw;
+}

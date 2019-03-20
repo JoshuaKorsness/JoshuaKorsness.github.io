@@ -123,12 +123,17 @@
 				return;
 			}
 
-			const html = list.map(match => {
+			//Generate html for list
+			let i = 0;
+			const htmlInner = list.map(match => {
+				i++;
 				return `<li class="listEntries">${match}</li>`
 			}).join('');
+			const html = `<div class="listContainer">${htmlInner}</div>`;
+
 			if (entry.className === 'inUnit') {
 				inpSugg.innerHTML = html;
-				inpSugg.childNodes.forEach(item => {
+				inpSugg.childNodes[0].childNodes.forEach(item => {
 					item.addEventListener('mousedown', () => {
 						inU.value = item.textContent;
 						clearSugg;
@@ -143,7 +148,7 @@
 			}
 			else {
 				outSugg.innerHTML = html;
-				outSugg.childNodes.forEach(item => {
+				outSugg.childNodes[0].childNodes.forEach(item => {
 					item.addEventListener('mousedown', () => {
 						outU.value = item.textContent;
 						clearSugg;
